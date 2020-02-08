@@ -1,4 +1,4 @@
 Simple flask website for my business 
 <div align="center">
-   <img src = "images/readme.png">
+   <img src = "static/images/readme.png">
 </div>
