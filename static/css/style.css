@@ -1,0 +1,214 @@
+@media screen and (min-width: 0px) and (max-width: 450px) {
+    body {
+        margin: 0px;
+        height: 100vh;
+        width: 100%vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 80px auto;
+        grid-template-areas:
+            "h h h h h h h h h h h h"
+            "c c c c c c c c c c c c";
+    }
+
+    header {
+        grid-area: h;
+        background-color: lightgrey;
+    }
+
+    .content {
+        grid-area: c;
+        background-color: lightcoral;
+    }
+
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        margin: 0px;
+        height: 100vh;
+        width: 100vw;
+        font-family: "Barlow", sans-serif;
+        background: linear-gradient(#050c09,#071c11);
+    }
+
+    header {
+        box-sizing: border-box;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 18px;
+        width: 100vw;
+        height: 70px;
+        font-family: "Barlow", sans-serif;
+        font-size: 24px;
+        text-transform: capitalize;
+        /*background-color: #080C0A;
+        background-color: #0a140f;*/
+        color: #F7FCF9E6;
+    }
+
+    .content {
+        padding-top: 56px;
+        height: 100%;
+        width: 100vw;
+        box-sizing: border-box;
+        font-family: 'Inconsolata', monospace;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url(/static/images/no_words_svg_transparent_light.svg);
+        background-size: 70vw;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .content-inner {
+        height: 70vh;
+        width: 70vw;
+        background-color: #F7FCF900;
+    }
+
+    .ci_right {
+        display: none;
+        height: 100%;
+        width: 32.5vw;
+        margin-left: 2.5vw;
+        float: right;
+        box-sizing: border-box;
+        background: linear-gradient(#050c09bf, #071c11bf);
+        /*background: linear-gradient(#f7fcf9B3, #f2f9f5b3);*/
+        padding: 24px 36px;
+        color: #F7FCF9E6;
+        /*color: #0a140f;*/
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 6px 8px 40px #000000FF, -2px -2px 12px #000000F2;
+    }
+
+    .ci_right > form {
+        margin: auto;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .mx-3 {
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+
+    .my-3 {
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    .mt-3 {
+        margin-top: 48px;
+    }
+
+    .mt-2 {
+        margin-top: 12px;
+    }
+
+    .mt-0 {
+        margin-top: 0px;
+    }
+
+    .slightly-muted {
+        color: #0a140f99;
+    }
+
+    .slightly-muted-light {
+        color: #F7FCF9B3;
+    }
+
+    .text-dark {
+        color: #0a140fD9;
+    }
+
+    .text-justify {
+        text-align: justify;
+    }
+
+    .btn {
+        min-width: 68px;
+        height: 40px;
+        padding: 8px;
+    }
+
+    .btn-primary {
+        background-color:#179d0d66;
+        border: none;
+        color: #F7FCF9E6;
+        font-weight: bold;
+    }
+
+    .btn-primary:hover {
+        background-color: #179d0d3D;
+    }
+
+    .btn-right {
+        float: right;
+    }
+
+    .btn-transparent {
+        background-color: transparent;
+        color: #F7FCF9E6;
+        border: none;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        font-family: 'Inconsolata', monospace;
+    }
+
+    .btn-transparent:hover {
+        color: #f2f9f5;
+    }
+
+    .btn-transparent:active {
+        border: none;
+    }
+
+    .btn-transparent:focus {
+        border: none;
+    }
+
+    label {
+        margin-bottom: 4px;
+    }
+
+    input {
+        box-sizing: border-box;
+        height: 34px;
+        background-color: #050c09bf;
+        border: 2px solid #F7FCF9bf;
+        color: #F7FCF9E6;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    select {
+        box-sizing: border-box;
+        height: 34px;
+        background-color: #050c09bf;
+        border: 2px solid #F7FCF9bf;
+        color: #F7FCF9E6;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    img {
+        height: 100px;
+    }
+
+}
