@@ -54,31 +54,23 @@
     }
 
     .content {
-        padding-top: 56px;
+        padding-top: 70px;
         height: 100%;
         width: 100vw;
         box-sizing: border-box;
         font-family: 'Inconsolata', monospace;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
         background-image: url(/static/images/no_words_svg_transparent_light.svg);
         background-size: 70vw;
         background-position: center;
         background-repeat: no-repeat;
     }
 
-    .content-inner {
-        height: 70vh;
-        width: 70vw;
-        background-color: #F7FCF900;
-    }
-
     .ci_right {
         display: none;
-        height: 100%;
-        width: 32.5vw;
-        margin-left: 2.5vw;
+        max-height: 100%;
+        overflow-y: auto;
+        width: 33.33vw;
+        margin-right: 32px;
         float: right;
         box-sizing: border-box;
         background: linear-gradient(#050c09bf, #071c11bf);
@@ -86,13 +78,19 @@
         padding: 24px 36px;
         color: #F7FCF9E6;
         /*color: #0a140f;*/
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 6px 8px 40px #000000FF, -2px -2px 12px #000000F2;
+        box-shadow: 6px 8px 40px #000000FF, -2px -2px 12px #000000FF;
     }
 
     .ci_right > form {
         margin: auto;
+    }
+
+    .contact-info {
+        display: inline-block;
+    }
+
+    .shipping-info {
+        display: none;
     }
 
     .block {

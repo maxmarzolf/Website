@@ -1,30 +1,37 @@
 <form>
-    <label for="inputEmail4" class="block mt-2">Email</label>
-    <input type="email" class="w-100" id="inputEmail4" placeholder="Email">
+    <h3 class="contact-info">Contact Info.</h3>
 
-    <label for="inputPassword4" class="block mt-2">Password</label>
-    <input type="password" class="w-100" id="inputPassword4" placeholder="Password">
+    <label for="name" class="w-100 mt-2 contact-info">Name</label>
+    <input type="text" class="w-100 contact-info" id="name">
 
-    <label for="inputAddress" class="block mt-2">Address</label>
-    <input type="text" class="w-100" id="inputAddress" placeholder="1234 Main St">
+    <label for="inputEmail4" class="w-100 mt-2 contact-info">Email</label>
+    <input type="email" class="w-100 contact-info" id="inputEmail4" placeholder="Email">
 
-    <label for="inputAddress2" class="block mt-2">Address 2</label>
-    <input type="text" class="w-100" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    <small class="w-100 mt-2 text-justify slightly-muted-light contact-info">We are not collecting your information for tracking,
+        data gathering, or other various, nefarious purposes. We just want to send you a sticker.</small>
 
-    <label for="inputCity" class="block mt-2">City</label>
-    <input type="text" class="w-100" id="inputCity">
+    <button type="button" id="shipping-info-btn" class="btn btn-primary btn-right mt-2 contact-info">Next</button>
 
-    <label for="inputState" class="block mt-2">State</label>
-    <select id="inputState" class="w-100">
+    <h3 class="shipping-info">Shipping Info.</h3>
+
+    <label for="inputAddress" class="w-100 mt-2 shipping-info">Address</label>
+    <input type="text" class="w-100 shipping-info" id="inputAddress" placeholder="1234 Main St">
+
+    <label for="inputAddress2" class="w-100 mt-2 shipping-info">Address 2</label>
+    <input type="text" class="w-100 shipping-info" id="inputAddress2" placeholder="Apartment, studio, or floor">
+
+    <label for="inputCity" class="w-100 mt-2 shipping-info">City</label>
+    <input type="text" class="w-100 shipping-info" id="inputCity">
+
+    <label for="inputState" class="w-100 mt-2 shipping-info">State</label>
+    <select id="inputState" class="w-100 shipping-info">
         <option selected>Choose...</option>
         <option>...</option>
     </select>
 
-    <label for="inputZip" class="block mt-2">Zip</label>
-    <input type="text" class="w-100" id="inputZip">
+    <label for="inputZip" class="w-100 mt-2 shipping-info">Zip</label>
+    <input type="text" class="w-100 shipping-info" id="inputZip">
 
-    <small class="block mt-2 text-justify slightly-muted-light">We are not collecting your information for tracking,
-        data gathering, or other various, nefarious purposes. We just want to send you a sticker.</small>
-
-    <button type="submit" class="btn btn-right btn-primary mt-2">Submit</button>
+    <button type="button" class="btn btn-primary mt-2 shipping-info" id="contact-info-btn">Back</button>
+    <button type="submit" class="btn btn-right btn-primary mt-2 shipping-info">Submit</button>
 </form>

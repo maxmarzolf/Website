@@ -13,32 +13,8 @@
     </header>
 
     <div class="content">
-        <div class="content-inner">
-            <div class="ci_right">
-                {% include 'form.html' %}
-                <!--<form action="">
-                    <label for="name" class="block">Name</label>
-                    <input type="text" name="name" class="w-100" />
-
-                    <label for="address" class="block mt-2">Address</label>
-                    <input type="text" name="address" class="w-100" />
-
-                    <label for="city" class="block mt-2">City</label>
-                    <input type="text" name="city" class="w-100" />
-
-                    <label for="state" class="block mt-2">State</label>
-                    <input type="text" name="state" class="w-100" />
-
-                    <label for="zip" class="block mt-2">ZIP</label>
-                    <input type="text" name="zip" class="w-100" />
-
-                    <small class="block mt-2 text-justify slightly-muted">We are not collecting your information for tracking, data gathering, or other
-                    various, nefarious purposes. We just want to send you a sticker.</small>
-
-                    <button class="btn btn-right btn-primary mt-2" type="submit">SUBMIT</button>
-                </form>-->
-
-            </div>
+        <div class="ci_right">
+            {% include 'form.html' %}
         </div>
     </div>
 
@@ -50,9 +26,33 @@
             if (event.target != formButton && event.target.closest('.ci_right') == null) {
                 form.style.display = 'none';
             } else {
-                form.style.display = 'flex';
+                form.style.display = 'inline-block';
+            }
+        }
+
+        document.getElementById('shipping-info-btn').onclick = function(event) {
+            console.log('SHIPPING INFO BTN CLICKED');
+            let contactInfoElements = document.querySelectorAll('.contact-info');
+            for (el of contactInfoElements) {
+                el.style.display = 'none';
             }
 
+            let shippingInfoElements = document.querySelectorAll('.shipping-info');
+            for (el of shippingInfoElements) {
+                el.style.display = 'inline-block';
+            }
+        }
+
+        document.getElementById('contact-info-btn').onclick = function(event) {
+            let _contactInfoElements = document.querySelectorAll('.contact-info');
+            for (el of _contactInfoElements) {
+                el.style.display = 'inline-block';
+            }
+
+            let _shippingInfoElements = document.querySelectorAll('.shipping-info');
+            for (el of _shippingInfoElements) {
+                el.style.display = 'none';
+            }
         }
     </script>
 
