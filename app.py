@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from flask_wtf import Form
+from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import Required
 
@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'not_a_good_key'
 
 
-class NameForm(Form):
+class NameForm(FlaskForm):
     name = StringField('Enter Name', validators=[Required])
     submit = SubmitField('Submit')
 
