@@ -23,8 +23,10 @@ class NameForm(FlaskForm):
 @app.route('/')
 def start():
     form = NameForm()
-    return render_template('form.html', form=form)
+    return render_template('home.html', form=form)
 
+
+# @app.route('/home.html')
 
 if __name__ == '__main__':
     app.run()

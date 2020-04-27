@@ -17,3 +17,7 @@ a:hover {
     color: #53b963;
     text-decoration: none !important
 }
+
+#logo {
+    padding-top: 225px;
+}
