@@ -3,10 +3,11 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, SubmitField
 from wtforms.validators import Required
 from flask_bootstrap import Bootstrap
+from os import environ
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'not_a_good_key'
+app.config['SECRET_KEY'] = environ.get('contact_form')
 bootstrap = Bootstrap(app)
 
 
@@ -22,11 +23,14 @@ class NameForm(FlaskForm):
 
 @app.route('/')
 def start():
+    return render_template('home.html')
+
+
+@app.route('/form.html')
+def contact_form():
     form = NameForm()
-    return render_template('home.html', form=form)
+    return render_template('form.html', form=form)
 
-
-# @app.route('/home.html')
 
 if __name__ == '__main__':
     app.run()
